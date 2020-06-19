@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+
+.landing-main {
+  width: 100%;
+  background-color: white;
+}
+.landing-vid {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+.landing-text {
+  text-align: center;
+
+  font-family: Courier, monospace;
+  font-size: 8vh;
+  color: red;
+  letter-spacing: 2px;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.landing-footer {
+  padding-left: 10px;
+  background-color: rgb(197, 227, 245);
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: black;
+  margin-top: -3px;
+}
+
+.contact-wrapper {
+  background-image: url(/img/lolo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92.4vh;
+  background-color: dimgray;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  justify-content: center;
+  text-align: center;
+}
+.contacts {
+  border: 1px solid black;
+  color: black;
+  border-radius: 25px;
+}
+.contacts .material-icons {
+  padding-top: 5px;
+  font-size: 30px;
+}
+.contacts h2 {
+  font-size: 50px;
+}
+
+.contacts p {
+  font-size: 30px;
+}
+
+.contacts:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 6px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+.column img:hover {
+  opacity: 1;
+  border: 1px solid red;
+  padding: 5px;
+}
+.column img:hover:nth-child(2) {
+  opacity: 1;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+
+.about-main {
+  margin-top: -24px;
+  height: 646px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/kl.jpg);
+}
+
+.text-about {
+  padding-top: 19.5px;
+  text-align: center;
+  color: red;
+  font-size: 3.4vh;
+  font-family: Courier, monospace;
+  letter-spacing: 5px;
+}
+
+.text-about-info {
+  margin-top: 12vh;
+  text-align: center;
+  font-size: 2.5vh;
+  color: red;
+  letter-spacing: 2px;
+  line-height: 2;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    white 100%
+  );
+
+  background-position: -0% 0;
+  background-size: 200%;
+
+  text-decoration: none;
+  transition: background-position 0.5s ease-out;
+  border-radius: 25px;
+}
+
+.text-about-info:hover {
+  background-position: -99.99% 0;
+}
+/* General grid styles */
+.cbp-ig-grid {
+  margin-top: 60px;
+  list-style: none;
+  padding: 0 0 10px 0;
+}
+
+/* Clear floats */
+.cbp-ig-grid:before,
+.cbp-ig-grid:after {
+  content: " ";
+  display: table;
+}
+
+.cbp-ig-grid:after {
+  clear: both;
+}
+
+/* grid item */
+.cbp-ig-grid li {
+  width: 33.3%;
+  float: left;
+  height: 260px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+/* we are using a combination of borders and box shadows to control the grid lines */
+.cbp-ig-grid li:nth-child(-n + 3) {
+  border-top: none;
+}
+
+.cbp-ig-grid li:nth-child(3n-1),
+.cbp-ig-grid li:nth-child(3n-2) {
+  box-shadow: 1px 0 0 #ddd;
+}
+
+/* anchor style */
+.cbp-ig-grid li > a {
+  display: block;
+  height: 100%;
+  color: black;
+  transition: background 0.2s;
+}
+
+/* the icon with pseudo class for icon font */
+.cbp-ig-icon {
+  padding: 30px 0 0 0;
+  display: block;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.cbp-ig-icon:before {
+  font-family: "anyoldicon";
+  font-size: 7vh;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cbp-ig-icon-shoe:before {
+  content: "PASSIONE";
+}
+
+.cbp-ig-icon-ribbon:before {
+  content: "QUALITÀ";
+}
+
+.cbp-ig-icon-milk:before {
+  content: "ESPERIENZA";
+}
+
+/* title element */
+.cbp-ig-grid .cbp-ig-title {
+  margin: 20px 0 10px 0;
+  padding: 20px 0 0 0;
+  font-size: 4vh;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-title:before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 160px;
+  height: 6px;
+  top: 0px;
+  left: 50%;
+  margin: -10px 0 0 -80px;
+  -webkit-transition: margin-top 0.2s; /* top or translate does not seem to work in Firefox */
+  -moz-transition: margin-top 0.2s;
+  transition: margin-top 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-category {
+  text-align: center;
+  display: inline-block;
+  font-size: 2vh;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transform: translateY(10px);
+  -moz-transform: -moz-translateY(10px);
+  -ms-transform: -ms-translateY(10px);
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.cbp-ig-grid li:hover .cbp-ig-category,
+.touch .cbp-ig-grid li .cbp-ig-category {
+  opacity: 1;
+  color: black;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+/* Hover styles */
+
+.cbp-ig-grid li > a:hover {
+  background: white;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  color: red;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title:before {
+  background: white;
+  margin-top: 80px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .cbp-ig-grid,
+  .cbp-ig-icon-shoe,
+  .contacts h2 {
+    display: none;
+  }
+  .contacts {
+    border: none;
+    color: red;
+    line-height: 2;
+  }
+  .contact-wrapper {
+    display: list-item;
+    text-align: center;
+  }
+  .landing-vid {
+    left: 5%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .cbp-ig-grid,
+  .cbp-ig-icon-shoe,
+  .contacts h2 {
+    display: none;
+  }
+  .contacts {
+    border: none;
+    color: red;
+  }
+  .contact-wrapper {
+    display: list-item;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cbp-ig-grid,
+  .cbp-ig-icon-shoe,
+  .contacts h2 {
+    display: none;
+  }
+  .contacts {
+    border: none;
+    color: red;
+    line-height: 2;
+  }
+  .contact-wrapper {
+    display: list-item;
+    text-align: center;
+  }
+  .landing-vid {
+    top: 25%;
+    left: 5%;
+  }
+}
